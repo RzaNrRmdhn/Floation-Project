@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".landingpage.LandingPageUpload">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:contentDescription="@string/uploadModul"
+            android:src="@drawable/upload" />
+
+        <TextView
+            android:id="@+id/uploadModul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="@string/uploadModul"
+            android:textColor="@color/baseColor"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/easyUploadModul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/uploadModul1"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="175dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/loadBar"
+                android:layout_width="25dp"
+                android:layout_height="9dp"
+                android:src="@drawable/custom_background_button"
+                android:contentDescription="@string/uploadModul1" />
+            
+            <ImageView
+                android:id="@+id/loadBar1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/custom_load"
+                android:contentDescription="@string/uploadModul1"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:text="@string/continueLanding"
+            android:fontFamily="@font/montserrat_bold"
+            android:background="@drawable/custom_background_button"/>
+
+        <Button
+            android:id="@+id/buttonSkip"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/skipLanding"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+</ScrollView>

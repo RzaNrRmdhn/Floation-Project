@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".asdosMenu.PresensiAsdosFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/baseColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="Hello"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/imageMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="?selectableItemBackground"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/menu" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/absen" />
+
+                <EditText
+                    android:id="@+id/userInputNama"
+                    android:layout_width="275dp"
+                    android:layout_height="50dp"
+                    android:hint="Nama"
+                    android:layout_gravity="center"
+                    android:paddingStart="20dp"
+                    android:background="@color/txtEdit"
+                    android:inputType="textPersonName"/>
+
+                <EditText
+                    android:id="@+id/userInputNPM"
+                    android:layout_width="275dp"
+                    android:layout_height="50dp"
+                    android:hint="NPM"
+                    android:layout_gravity="center"
+                    android:paddingStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/txtEdit"
+                    android:inputType="textPersonName"/>
+
+                <EditText
+                    android:id="@+id/userInputMataKuliah"
+                    android:layout_width="275dp"
+                    android:layout_height="50dp"
+                    android:hint="Mata Kuliah"
+                    android:layout_gravity="center"
+                    android:paddingStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/txtEdit"
+                    android:inputType="textPersonName"/>
+
+                <EditText
+                    android:id="@+id/userInputTanggal"
+                    android:layout_width="275dp"
+                    android:layout_height="50dp"
+                    android:hint="Tanggal"
+                    android:layout_gravity="center"
+                    android:paddingStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/txtEdit"
+                    android:inputType="textPersonName"/>
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_background_button"
+                    android:layout_marginTop="30dp"
+                    android:text="Submit"
+                    android:fontFamily="@font/montserrat_bold"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

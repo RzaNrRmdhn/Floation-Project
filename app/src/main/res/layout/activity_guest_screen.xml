@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".guestMenu.GuestScreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/choose_modul"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modul Akt"
+        android:textColor="@color/baseColor"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="32sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/userInputAkt"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:hint="Modul Akt"
+        android:background="@color/txtEdit"
+        android:layout_gravity="center"
+        android:paddingStart="20dp"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_background_button"
+        android:layout_marginTop="60dp"
+        android:text="Submit"
+        android:fontFamily="@font/montserrat_bold"/>
+</LinearLayout>

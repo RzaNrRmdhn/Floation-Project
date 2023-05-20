@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeAsdos"
+        android:title="Home"
+        android:icon="@drawable/dashboard"/>
+
+    <item
+        android:id="@+id/presensiAsdos"
+        android:title="Presensi"
+        android:icon="@drawable/presensi"/>
+
+    <item
+        android:id="@+id/placeholder"
+        android:title="" />
+
+    <item
+        android:id="@+id/modulAsdos"
+        android:title="Modul"
+        android:icon="@drawable/book"/>
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/setting"/>
+
+</menu>
